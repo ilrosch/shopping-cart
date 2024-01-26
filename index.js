@@ -43,7 +43,6 @@ export const shoppingCart = {
   calculateTotal() {
     this.items.map(({ price, quantity }) => {
       this.total += price * quantity;
-      return true;
     });
 
     return this.total;
